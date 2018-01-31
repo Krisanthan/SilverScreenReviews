@@ -73,3 +73,5 @@ C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\S
 C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.csproj.GenerateResource.Cache
 C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.addPremiumStatus.resources
 C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.AddMembershipType.resources
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.PopulateMembershipTypes.resources
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.ApplyAnnotationToUserName.resources
