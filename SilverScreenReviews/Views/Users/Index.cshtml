@@ -1,0 +1,29 @@
+﻿@model IEnumerable<SilverScreenReviews.Models.User>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Users</h2>
+@if (!Model.Any())
+{
+    <p>No registered users.</p>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>User</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@Html.ActionLink(user.Name, "Details", "Users", new { id = user.Id }, null)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

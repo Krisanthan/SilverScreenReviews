@@ -1,0 +1,24 @@
+﻿@model SilverScreenReviews.ViewModels.RandomMovieViewModel
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    var className = Model.Users.Count > 5 ? "active" : null;
+}
+<h2 class=@className>@Model.Movie.Name</h2>
+
+@if (Model.Users.Count == 0)
+{
+    <p>No ratings yet.</p>
+}
+else
+{
+    <ul>
+        @foreach (var user in Model.Users)
+        {
+            <li>@user.Name</li>
+        }
+    </ul>
+}
