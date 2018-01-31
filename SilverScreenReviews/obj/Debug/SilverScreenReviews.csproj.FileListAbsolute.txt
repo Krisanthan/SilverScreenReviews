@@ -69,3 +69,7 @@ c:\users\krishb\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\S
 c:\users\krishb\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.csproj.CoreCompileInputs.cache
 c:\users\krishb\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.dll
 c:\users\krishb\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.pdb
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.InitialModel.resources
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.csproj.GenerateResource.Cache
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.addPremiumStatus.resources
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.AddMembershipType.resources
