@@ -10,10 +10,16 @@ namespace SilverScreenReviews.Controllers
 {
     public class MoviesController : Controller
     {
+        private ApplicationDbContext _context;
+
+        public MoviesController()
+        {
+            _context = new ApplicationDbContext();
+        }
 
         public ViewResult Index()
         {
-            var movies = listMovies();
+            var movies = _context.Movies.ToList();
             return View(movies);
         }
 
@@ -42,12 +48,5 @@ namespace SilverScreenReviews.Controllers
         //    return Content(year + "");
         //}
 
-        private IEnumerable<Movie> listMovies()
-        {
-            var movie1 = new Movie() { Name = "Interstellar", Id = 1 };
-            var movie2 = new Movie() { Name = "Rocky", Id = 2 };
-            List<Movie> movies = new List<Movie> { movie1, movie2 };
-            return movies;
-        }
     }
 }

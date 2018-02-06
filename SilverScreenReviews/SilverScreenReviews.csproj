@@ -217,6 +217,18 @@
     <Compile Include="Migrations\201801311708032_ApplyAnnotationToUserName.Designer.cs">
       <DependentUpon>201801311708032_ApplyAnnotationToUserName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802060000033_InitialModel1.cs" />
+    <Compile Include="Migrations\201802060000033_InitialModel1.Designer.cs">
+      <DependentUpon>201802060000033_InitialModel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802060002130_InitialModel2.cs" />
+    <Compile Include="Migrations\201802060002130_InitialModel2.Designer.cs">
+      <DependentUpon>201802060002130_InitialModel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802060007120_PopulateMovies.cs" />
+    <Compile Include="Migrations\201802060007120_PopulateMovies.Designer.cs">
+      <DependentUpon>201802060007120_PopulateMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -323,6 +335,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801311708032_ApplyAnnotationToUserName.resx">
       <DependentUpon>201801311708032_ApplyAnnotationToUserName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802060000033_InitialModel1.resx">
+      <DependentUpon>201802060000033_InitialModel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802060002130_InitialModel2.resx">
+      <DependentUpon>201802060002130_InitialModel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802060007120_PopulateMovies.resx">
+      <DependentUpon>201802060007120_PopulateMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
