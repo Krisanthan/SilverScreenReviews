@@ -38,5 +38,10 @@ namespace SilverScreenReviews.Controllers
             }
             return View(user);
         }
+
+        public ActionResult New()
+        {
+            return View();
+        }
     }
 }

@@ -1,0 +1,20 @@
+﻿@model SilverScreenReviews.Models.User
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New User</h2>
+
+@using (Html.BeginForm("Create", "Users"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    </div>
+    <div class="checkbox">
+        <label>
+            @Html.CheckBoxFor(m => m.premiumStatus) Do you want to be a premium member?
+        </label>
+    </div>
+}
