@@ -229,6 +229,10 @@
     <Compile Include="Migrations\201802060007120_PopulateMovies.Designer.cs">
       <DependentUpon>201802060007120_PopulateMovies.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802082228159_NameForMemberships.cs" />
+    <Compile Include="Migrations\201802082228159_NameForMemberships.Designer.cs">
+      <DependentUpon>201802082228159_NameForMemberships.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -238,6 +242,7 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\NewCustomerViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -345,6 +350,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802060007120_PopulateMovies.resx">
       <DependentUpon>201802060007120_PopulateMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802082228159_NameForMemberships.resx">
+      <DependentUpon>201802082228159_NameForMemberships.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
