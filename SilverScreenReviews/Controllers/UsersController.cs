@@ -50,5 +50,14 @@ namespace SilverScreenReviews.Controllers
 
             return View(viewModel);
         }
+
+        [HttpPost]
+        public ActionResult Create(User user)
+        {
+            _context.Users.Add(user);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index", "Users");
+        }
     }
 }
