@@ -43,12 +43,12 @@ namespace SilverScreenReviews.Controllers
         public ActionResult New()
         {
             var membershipTypes = _context.MembershipTypes.ToList();
-            var viewModel = new NewCustomerViewModel 
+            var viewModel = new CustomerFormViewModel 
             {
                 MembershipTypes = membershipTypes
             };
 
-            return View(viewModel);
+            return View("CustomerForm", viewModel);
         }
 
         [HttpPost]
@@ -58,6 +58,19 @@ namespace SilverScreenReviews.Controllers
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Users");
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var user = _context.Users.SingleOrDefault(c => c.Id == id);
+            if (user == null)
+                return HttpNotFound();
+            var viewModel = new CustomerFormViewModel
+            {
+                User = user,
+                MembershipTypes = _context.MembershipTypes.ToList()
+            }; 
+            return View("CustomerForm", viewModel);
         }
     }
 }

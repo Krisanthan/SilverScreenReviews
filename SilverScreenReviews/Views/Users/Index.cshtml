@@ -22,7 +22,7 @@ else
             @foreach (var user in Model)
             {
                 <tr>
-                    <td>@Html.ActionLink(user.Name, "Details", "Users", new { id = user.Id }, null)</td>
+                    <td>@Html.ActionLink(user.Name, "Edit", "Users", new { id = user.Id }, null)</td>
                     <td>@(user.premiumStatus == true ? "Premium member" : "Regular member")</td>
                 </tr>
             }
