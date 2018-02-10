@@ -52,9 +52,19 @@ namespace SilverScreenReviews.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(User user)
+        public ActionResult Save(User user)
         {
-            _context.Users.Add(user);
+            if(user.Id == 0)
+                _context.Users.Add(user);
+            else
+            {
+                var userInDb = _context.Users.Single(c => c.Id == user.Id);
+
+                userInDb.Name = user.Name;
+                userInDb.premiumStatus = user.premiumStatus;
+                userInDb.MembershipTypeId = user.MembershipTypeId;
+                userInDb.MembershipType = user.MembershipType;
+            }
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Users");
