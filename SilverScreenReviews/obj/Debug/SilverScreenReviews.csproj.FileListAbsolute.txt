@@ -79,3 +79,4 @@ C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\S
 C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.InitialModel2.resources
 C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.PopulateMovies.resources
 C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.NameForMemberships.resources
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.genreAddedToMovies.resources
