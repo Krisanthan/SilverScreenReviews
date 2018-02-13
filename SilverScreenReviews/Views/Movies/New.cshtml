@@ -1,9 +1,9 @@
 ﻿@model SilverScreenReviews.Models.Movie
 @{
-                /**/
+    /**/
 
-                ViewBag.Title = "NewMovie";
-                Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "NewMovie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>New Movie</h2>
@@ -17,4 +17,7 @@
         @Html.LabelFor(m => m.Genre)
         @Html.TextBoxFor(m => m.Genre, new { @class = "form-control" })
     </div>
+
+    @Html.HiddenFor(m => m.Id)
+    <button type="submit" class="btn btn-primary">Register</button>
 }
