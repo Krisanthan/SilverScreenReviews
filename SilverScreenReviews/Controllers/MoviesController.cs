@@ -23,11 +23,6 @@ namespace SilverScreenReviews.Controllers
             return View(movies);
         }
 
-        public ActionResult New()
-        {
-            return View();
-        }
-
         // GET: Movies
         //public ActionResult Random()
         //{

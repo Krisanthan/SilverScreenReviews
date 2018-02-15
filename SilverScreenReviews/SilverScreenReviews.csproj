@@ -233,13 +233,8 @@
     <Compile Include="Migrations\201802082228159_NameForMemberships.Designer.cs">
       <DependentUpon>201802082228159_NameForMemberships.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201802121649143_genreAddedToMovies.cs" />
-    <Compile Include="Migrations\201802121649143_genreAddedToMovies.Designer.cs">
-      <DependentUpon>201802121649143_genreAddedToMovies.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -314,7 +309,6 @@
     <Content Include="Views\Users\Index.cshtml" />
     <Content Include="Views\Users\Details.cshtml" />
     <Content Include="Views\Users\CustomerForm.cshtml" />
-    <Content Include="Views\Movies\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -359,9 +353,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802082228159_NameForMemberships.resx">
       <DependentUpon>201802082228159_NameForMemberships.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802121649143_genreAddedToMovies.resx">
-      <DependentUpon>201802121649143_genreAddedToMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
