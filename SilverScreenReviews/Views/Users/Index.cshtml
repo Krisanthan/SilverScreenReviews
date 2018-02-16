@@ -26,8 +26,7 @@ else
                     <td>@(user.premiumStatus == true ? "Premium member" : "Regular member")</td>
                 </tr>
             }
-            <button type="submit" class="btn btn-primary">Register new user</button>
-
+            <button type="submit" class="btn btn-primary" onclick="location.href='@Url.Action("New", "Users")'">Register new user</button>
         </tbody>
     </table>
 }
