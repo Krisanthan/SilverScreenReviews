@@ -15,6 +15,7 @@ namespace SilverScreenReviews.Models
         [Display(Name = "Full name")]
         public string Name { get; set; }
 
+        [ValidAge]
         public bool premiumStatus { get; set; }
 
         public MembershipType MembershipType { get; set; }

@@ -21,6 +21,7 @@
     <div class="checkbox">
         <label>
             @Html.CheckBoxFor(m => m.User.premiumStatus) Do you want to be a premium member?
+            @Html.ValidationMessageFor(m => m.User.premiumStatus)
         </label>
     </div>
 
