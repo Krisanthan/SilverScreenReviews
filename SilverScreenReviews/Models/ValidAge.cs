@@ -11,10 +11,12 @@ namespace SilverScreenReviews.Models
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
             var user = (User)validationContext.ObjectInstance;
-            if (user.MembershipTypeId == 1)
+
+            if (user.MembershipTypeId == MembershipType.Free)
                 return ValidationResult.Success;
             else if (user.premiumStatus == false)
                 return new ValidationResult("Must be a premium member");
+
             return ValidationResult.Success;
         }
     }
