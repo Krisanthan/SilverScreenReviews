@@ -45,6 +45,7 @@ namespace SilverScreenReviews.Controllers
             var membershipTypes = _context.MembershipTypes.ToList();
             var viewModel = new CustomerFormViewModel 
             {
+                User = new User(),
                 MembershipTypes = membershipTypes
             };
 

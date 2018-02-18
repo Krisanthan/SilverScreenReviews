@@ -8,6 +8,7 @@
 
 @using (Html.BeginForm("Save", "Users"))
 {
+    @Html.ValidationSummary(true, "There are some fields missing.")
     <div class="form-group">
         @Html.LabelFor(m => m.User.Name)
         @Html.TextBoxFor(m => m.User.Name, new { @class = "form-control" })
