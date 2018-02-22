@@ -6,7 +6,7 @@ using System.Web;
 
 namespace SilverScreenReviews.Models
 {
-    public class ValidAge : ValidationAttribute
+    public class ValidMember : ValidationAttribute
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
