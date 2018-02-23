@@ -1,4 +1,6 @@
-﻿using SilverScreenReviews.Models;
+﻿using AutoMapper;
+using SilverScreenReviews.DTO;
+using SilverScreenReviews.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,36 +20,39 @@ namespace SilverScreenReviews.Controllers.API
         }
 
         // GET /api/users
-        public IEnumerable<User> GetUsers()
+        public IEnumerable<UserDTO> GetUsers()
         {
-            return _context.Users.ToList();
+            return _context.Users.ToList().Select(Mapper.Map<User, UserDTO>);
         }
 
         // GET /api/user/1
-        public User GetUser(int id)
+        public UserDTO GetUser(int id)
         {
             var user = _context.Users.SingleOrDefault(c => c.Id == id);
             if (user == null)
                 throw new HttpResponseException(HttpStatusCode.NotFound);
-            return user;
+            return Mapper.Map<User, UserDTO>(user);
         }
 
         // POST /api/users
         [HttpPost]
-        public User CreateUser(User user)
+        public UserDTO CreateUser(UserDTO userDTO)
         {
             if (!ModelState.IsValid)
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
 
+            var user = Mapper.Map<UserDTO, User>(userDTO);
             _context.Users.Add(user);
             _context.SaveChanges();
 
-            return user;
+            userDTO.Id = user.Id;
+
+            return userDTO;
         } 
 
         // PUT /api/users/1
         [HttpPut]
-        public void UpdateUser(int id, User user)
+        public void UpdateUser(int id, UserDTO userDTO)
         {
             if (!ModelState.IsValid)
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
@@ -57,10 +62,7 @@ namespace SilverScreenReviews.Controllers.API
             if (userInDb == null)
                 throw new HttpResponseException(HttpStatusCode.NotFound);
 
-            userInDb.Name = user.Name;
-            userInDb.MembershipTypeId = user.MembershipTypeId;
-            userInDb.premiumStatus = user.premiumStatus;
-            userInDb.MembershipType = user.MembershipType;
+            Mapper.Map(userDTO, userInDb);
 
             _context.SaveChanges();
         }
