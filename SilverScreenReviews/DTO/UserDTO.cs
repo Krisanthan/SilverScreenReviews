@@ -7,7 +7,7 @@ using System.Web;
 
 namespace SilverScreenReviews.DTO
 {
-    public class UserCTO
+    public class UserDTO
     {
         public int Id { get; set; }
 
