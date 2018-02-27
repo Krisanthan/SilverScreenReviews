@@ -15,7 +15,7 @@ namespace SilverScreenReviews.DTO
         [StringLength(255)]
         public string Name { get; set; }
 
-        [ValidMember]
+        //[ValidMember]
         public bool premiumStatus { get; set; }
 
         public byte MembershipTypeId { get; set; }

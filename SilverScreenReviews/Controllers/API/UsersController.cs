@@ -26,12 +26,13 @@ namespace SilverScreenReviews.Controllers.API
         }
 
         // GET /api/user/1
-        public UserDTO GetUser(int id)
+        public IHttpActionResult GetUser(int id)
         {
             var user = _context.Users.SingleOrDefault(c => c.Id == id);
             if (user == null)
-                throw new HttpResponseException(HttpStatusCode.NotFound);
-            return Mapper.Map<User, UserDTO>(user);
+                return NotFound();
+
+            return Ok(Mapper.Map<User, UserDTO>(user));
         }
 
         // POST /api/users
