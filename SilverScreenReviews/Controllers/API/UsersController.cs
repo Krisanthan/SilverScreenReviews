@@ -36,10 +36,10 @@ namespace SilverScreenReviews.Controllers.API
 
         // POST /api/users
         [HttpPost]
-        public UserDTO CreateUser(UserDTO userDTO)
+        public IHttpActionResult CreateUser(UserDTO userDTO)
         {
             if (!ModelState.IsValid)
-                throw new HttpResponseException(HttpStatusCode.BadRequest);
+                return BadRequest();
 
             var user = Mapper.Map<UserDTO, User>(userDTO);
             _context.Users.Add(user);
@@ -47,7 +47,7 @@ namespace SilverScreenReviews.Controllers.API
 
             userDTO.Id = user.Id;
 
-            return userDTO;
+            return Created(new Uri(Request.RequestUri + "/" + user.Id), userDTO);
         } 
 
         // PUT /api/users/1
