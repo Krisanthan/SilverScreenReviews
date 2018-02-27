@@ -79,3 +79,11 @@ C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\S
 C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.InitialModel2.resources
 C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.PopulateMovies.resources
 C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.NameForMemberships.resources
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\AutoMapper.dll
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\System.Net.Http.Formatting.dll
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\System.Web.Http.dll
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\System.Web.Http.WebHost.dll
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\AutoMapper.xml
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\System.Net.Http.Formatting.xml
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\System.Web.Http.xml
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\System.Web.Http.WebHost.xml
