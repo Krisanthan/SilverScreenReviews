@@ -14,6 +14,7 @@ namespace SilverScreenReviews.App_Start
         {
             Mapper.CreateMap<User, UserDTO>();
             Mapper.CreateMap<UserDTO, User>();
+            Mapper.CreateMap<MembershipType, MembershipTypeDTO>();
         }
     }
 }

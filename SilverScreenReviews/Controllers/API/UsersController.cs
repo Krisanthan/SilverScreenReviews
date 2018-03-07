@@ -2,6 +2,7 @@
 using SilverScreenReviews.DTO;
 using SilverScreenReviews.Models;
 using System;
+using System.Data.Entity;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -22,7 +23,8 @@ namespace SilverScreenReviews.Controllers.API
         // GET /api/users
         public IEnumerable<UserDTO> GetUsers()
         {
-            return _context.Users.ToList().Select(Mapper.Map<User, UserDTO>);
+            var userDTOs = _context.Users.Include(c => c.MembershipType).ToList().Select(Mapper.Map<User, UserDTO>);
+            return userDTOs;
         }
 
         // GET /api/user/1
