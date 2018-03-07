@@ -5,39 +5,47 @@
 }
 
 <h2>Users</h2>
-@if (!Model.Any())
-{
-    <p>No registered users.</p>
-}
-else
-{
-    <table id="users" class="table table-bordered table-hover" width="1000">
-        <thead>
-            <tr>
-                <th>User</th>
-                <th>Membership Type</th>
-                <th>Delete</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var user in Model)
-            {
-                <tr>
-                    <td>@Html.ActionLink(user.Name, "Edit", "Users", new { id = user.Id }, null)</td>
-                    <td>@(user.premiumStatus == true ? "Premium member" : "Regular member")</td>
-                    <td><button data-user-id="@user.Id" class="btn-link js-delete">Delete</button></td>
-                </tr>
-            }
-            <button type="submit" class="btn btn-primary" onclick="location.href='@Url.Action("New", "Users")'">Register new user</button>
-        </tbody>
-    </table>
-}
+
+<table id="users" class="table table-bordered table-hover" width="1000">
+    <thead>
+        <tr>
+            <th>User</th>
+            <th>Membership Type</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>        
+    </tbody>
+</table>
+
 @section scripts
 {
     <script>
         $(document).ready(function () {
 
-            $("#users").DataTable();
+            $("#users").DataTable({
+                ajax: {
+                    url: "/api/users",
+                    dataSrc: ""
+                },
+                columns: [
+                    {
+                        data: "name",
+                        render: function (data, type, user) {
+                            return "<a href='/users/edit/" + user.id + "'>" + user.name + "</a>";
+                        }
+                    },
+                    {
+                        data: "name"
+                    }, 
+                    {
+                        data: "id",
+                        render: function (data) {
+                            return "<button class='btn-link js-delete' data-user-id=" + data + ">Delete</button>";
+                        }
+                    }
+                ]
+            });
                 
 
             $("#users").on("click", ".js-delete", function () {

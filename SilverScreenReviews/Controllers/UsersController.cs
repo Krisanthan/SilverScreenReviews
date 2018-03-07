@@ -26,8 +26,7 @@ namespace SilverScreenReviews.Controllers
         // GET: Users
         public ViewResult Index()
         {
-            var users = _context.Users.Include(c => c.MembershipType).ToList();
-            return View(users);
+            return View();
         }
 
         public ActionResult Details(int id)
