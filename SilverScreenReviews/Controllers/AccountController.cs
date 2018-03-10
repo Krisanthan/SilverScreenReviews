@@ -157,11 +157,12 @@ namespace SilverScreenReviews.Controllers
                 if (result.Succeeded)
                 {
 
-                    var roleStore = new RoleStore<IdentityRole>(new ApplicationDbContext());
+                    // USED TO CREATE ADMIN
+                    /*var roleStore = new RoleStore<IdentityRole>(new ApplicationDbContext());
                     var roleManager = new RoleManager<IdentityRole>(roleStore);
                     await roleManager.CreateAsync(new IdentityRole("CanManageUsers"));
 
-                    await UserManager.AddToRoleAsync(user.Id, "CanManageUsers");
+                    await UserManager.AddToRoleAsync(user.Id, "CanManageUsers");*/
 
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                     
