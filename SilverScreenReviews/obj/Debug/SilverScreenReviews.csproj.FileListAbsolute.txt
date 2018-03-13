@@ -88,3 +88,8 @@ C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\System.
 C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\System.Web.Http.xml
 C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\System.Web.Http.WebHost.xml
 C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.SeedUsers.resources
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\Glimpse.Ado.dll
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\Glimpse.AspNet.dll
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\Glimpse.Core.dll
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\Glimpse.EF6.dll
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\Glimpse.Mvc5.dll
