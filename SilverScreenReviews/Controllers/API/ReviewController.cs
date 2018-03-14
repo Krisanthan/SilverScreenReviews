@@ -16,6 +16,7 @@ namespace SilverScreenReviews.Controllers.API
             _context = new ApplicationDbContext();
         }
 
+        [HttpPost]
         public IHttpActionResult CreateNewReview(ReviewDTO reviewDTO)
         {
             throw new NotImplementedException();
