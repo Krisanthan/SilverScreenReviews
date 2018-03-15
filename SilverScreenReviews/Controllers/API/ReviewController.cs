@@ -1,4 +1,5 @@
-﻿using SilverScreenReviews.Models;
+﻿using SilverScreenReviews.DTO;
+using SilverScreenReviews.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,9 +18,28 @@ namespace SilverScreenReviews.Controllers.API
         }
 
         [HttpPost]
-        public IHttpActionResult CreateNewReview(ReviewDTO reviewDTO)
+        public IHttpActionResult CreateNewReviews(ReviewDTO newReview)
         {
-            throw new NotImplementedException();
+            var user = _context.Users.Single(
+                c => c.Id == newReview.UserID);
+
+            var movies = _context.Movies.Where(
+                m => newReview.MovieIds.Contains(m.Id));
+
+            foreach (var movie in movies)
+            {
+                var review = new Review
+                {
+                    User = user,
+                    Movie = movie,
+                    DateReviewed = DateTime.Now
+                };
+
+                _context.Reviews.Add(review);
+            }
+
+            _context.SaveChanges();
+            return Ok();
         }
     }
 }
