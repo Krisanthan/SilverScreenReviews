@@ -93,3 +93,4 @@ C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\Glimpse
 C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\Glimpse.Core.dll
 C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\Glimpse.EF6.dll
 C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\bin\Glimpse.Mvc5.dll
+C:\Users\KrishB\source\repos\SilverScreenReviews\SilverScreenReviews\obj\Debug\SilverScreenReviews.Migrations.users.resources
